@@ -28,222 +28,535 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AttendanceRecords_UserControl));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.lc_AttendanceRecords = new DevExpress.XtraLayout.LayoutControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_CloseForm = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pe_QRCode = new DevExpress.XtraEditors.PictureEdit();
+            this.label_IDNumber1 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_SchoolStudentId = new DevExpress.XtraEditors.LabelControl();
+            this.label_Name1 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_Name = new DevExpress.XtraEditors.LabelControl();
+            this.label_Email1 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_Email = new DevExpress.XtraEditors.LabelControl();
+            this.label_Course1 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_Course = new DevExpress.XtraEditors.LabelControl();
+            this.label_YearLevel1 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_YearLevel = new DevExpress.XtraEditors.LabelControl();
+            this.lcg_StudentInformation = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem22 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem25 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.cbe_FilterYearLevel = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbe_FilterCourse = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.gc_Students = new DevExpress.XtraGrid.GridControl();
+            this.gv_Students = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.grdclm_SchoolStudentId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdclm_FullName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdclm_View = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemButton_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.panel_PageHeading = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Report = new DevExpress.XtraEditors.SimpleButton();
             this.label_PageTitle = new DevExpress.XtraEditors.LabelControl();
             this.label_PageDescription = new DevExpress.XtraEditors.LabelControl();
-            this.panel_SearchBar = new DevExpress.XtraEditors.PanelControl();
-            this.findPanel = new DevExpress.XtraEditors.SearchControl();
-            this.panel_CourseFilter = new DevExpress.XtraEditors.PanelControl();
-            this.cbe_Course = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.panel_YearLevelFilter = new DevExpress.XtraEditors.PanelControl();
-            this.cbe_YearLevel = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.panel_PageBody = new DevExpress.XtraEditors.PanelControl();
-            this.gc_AttendanceRecords = new DevExpress.XtraGrid.GridControl();
-            this.gv_AttendanceRecords = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.grdclm_SchoolStudentId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.grdclm_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.grdclm_Action = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemButton_Action = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.panel_QRCode = new DevExpress.XtraEditors.PanelControl();
-            this.pe_QRCode = new DevExpress.XtraEditors.PictureEdit();
-            this.panel_StudentInfo = new DevExpress.XtraEditors.PanelControl();
-            this.txt_YearLevel = new DevExpress.XtraEditors.LabelControl();
-            this.txt_Course = new DevExpress.XtraEditors.LabelControl();
-            this.txt_Email = new DevExpress.XtraEditors.LabelControl();
-            this.txt_Name = new DevExpress.XtraEditors.LabelControl();
-            this.txt_SchoolStudentId = new DevExpress.XtraEditors.LabelControl();
-            this.label_YearLevel = new DevExpress.XtraEditors.LabelControl();
-            this.label_Course = new DevExpress.XtraEditors.LabelControl();
-            this.label_Email = new DevExpress.XtraEditors.LabelControl();
-            this.label_Name = new DevExpress.XtraEditors.LabelControl();
-            this.label_IDNumber = new DevExpress.XtraEditors.LabelControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lci_PageHeading = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_FindPanel = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_PageBody = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_CourseFilter = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_YearLevel = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_QRCode = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_StudentInfo = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lci_StudentInformation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.lc_AttendanceRecords)).BeginInit();
             this.lc_AttendanceRecords.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
+            this.layoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CloseForm.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pe_QRCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcg_StudentInformation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbe_FilterYearLevel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbe_FilterCourse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Students)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Students)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButton_View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_PageHeading)).BeginInit();
             this.panel_PageHeading.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_SearchBar)).BeginInit();
-            this.panel_SearchBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.findPanel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_CourseFilter)).BeginInit();
-            this.panel_CourseFilter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbe_Course.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_YearLevelFilter)).BeginInit();
-            this.panel_YearLevelFilter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbe_YearLevel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_PageBody)).BeginInit();
-            this.panel_PageBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gc_AttendanceRecords)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_AttendanceRecords)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButton_Action)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_QRCode)).BeginInit();
-            this.panel_QRCode.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pe_QRCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_StudentInfo)).BeginInit();
-            this.panel_StudentInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lci_PageHeading)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_FindPanel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_PageBody)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_CourseFilter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_YearLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_QRCode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_StudentInfo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
-            this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lci_StudentInformation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             this.SuspendLayout();
             // 
             // lc_AttendanceRecords
             // 
+            this.lc_AttendanceRecords.Controls.Add(this.panelControl2);
+            this.lc_AttendanceRecords.Controls.Add(this.panelControl1);
             this.lc_AttendanceRecords.Controls.Add(this.panel_PageHeading);
-            this.lc_AttendanceRecords.Controls.Add(this.panel_SearchBar);
-            this.lc_AttendanceRecords.Controls.Add(this.panel_CourseFilter);
-            this.lc_AttendanceRecords.Controls.Add(this.panel_YearLevelFilter);
-            this.lc_AttendanceRecords.Controls.Add(this.panel_PageBody);
-            this.lc_AttendanceRecords.Controls.Add(this.panel_QRCode);
-            this.lc_AttendanceRecords.Controls.Add(this.panel_StudentInfo);
             this.lc_AttendanceRecords.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lc_AttendanceRecords.Location = new System.Drawing.Point(0, 0);
             this.lc_AttendanceRecords.Name = "lc_AttendanceRecords";
             this.lc_AttendanceRecords.Root = this.Root;
-            this.lc_AttendanceRecords.Size = new System.Drawing.Size(1038, 768);
+            this.lc_AttendanceRecords.Size = new System.Drawing.Size(1440, 1024);
             this.lc_AttendanceRecords.TabIndex = 0;
             this.lc_AttendanceRecords.Text = "layoutControl1";
             // 
-            // panel_PageHeading
+            // panelControl2
             // 
-            this.panel_PageHeading.Controls.Add(this.btn_Report);
-            this.panel_PageHeading.Controls.Add(this.label_PageTitle);
-            this.panel_PageHeading.Controls.Add(this.label_PageDescription);
-            this.panel_PageHeading.Location = new System.Drawing.Point(16, 15);
-            this.panel_PageHeading.Name = "panel_PageHeading";
-            this.panel_PageHeading.Size = new System.Drawing.Size(1006, 100);
-            this.panel_PageHeading.TabIndex = 12;
+            this.panelControl2.Controls.Add(this.layoutControl2);
+            this.panelControl2.Location = new System.Drawing.Point(968, 124);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(456, 884);
+            this.panelControl2.TabIndex = 14;
             // 
-            // btn_Report
+            // layoutControl2
             // 
-            this.btn_Report.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.layoutControl2.Controls.Add(this.panelControl3);
+            this.layoutControl2.Controls.Add(this.pe_QRCode);
+            this.layoutControl2.Controls.Add(this.label_IDNumber1);
+            this.layoutControl2.Controls.Add(this.txt_SchoolStudentId);
+            this.layoutControl2.Controls.Add(this.label_Name1);
+            this.layoutControl2.Controls.Add(this.txt_Name);
+            this.layoutControl2.Controls.Add(this.label_Email1);
+            this.layoutControl2.Controls.Add(this.txt_Email);
+            this.layoutControl2.Controls.Add(this.label_Course1);
+            this.layoutControl2.Controls.Add(this.txt_Course);
+            this.layoutControl2.Controls.Add(this.label_YearLevel1);
+            this.layoutControl2.Controls.Add(this.txt_YearLevel);
+            this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl2.Location = new System.Drawing.Point(2, 2);
+            this.layoutControl2.Name = "layoutControl2";
+            this.layoutControl2.Root = this.lcg_StudentInformation;
+            this.layoutControl2.Size = new System.Drawing.Size(452, 880);
+            this.layoutControl2.TabIndex = 0;
+            this.layoutControl2.Text = "layoutControl2";
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.btn_CloseForm);
+            this.panelControl3.Controls.Add(this.labelControl1);
+            this.panelControl3.Location = new System.Drawing.Point(16, 16);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(420, 39);
+            this.panelControl3.TabIndex = 10;
+            // 
+            // btn_CloseForm
+            // 
+            this.btn_CloseForm.EditValue = ((object)(resources.GetObject("btn_CloseForm.EditValue")));
+            this.btn_CloseForm.Location = new System.Drawing.Point(13, 5);
+            this.btn_CloseForm.Name = "btn_CloseForm";
+            this.btn_CloseForm.Properties.AllowZoom = DevExpress.Utils.DefaultBoolean.True;
+            this.btn_CloseForm.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CloseForm.Properties.Appearance.Options.UseBackColor = true;
+            this.btn_CloseForm.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btn_CloseForm.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.btn_CloseForm.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.btn_CloseForm.Properties.SvgImageSize = new System.Drawing.Size(14, 14);
+            this.btn_CloseForm.Size = new System.Drawing.Size(26, 28);
+            this.btn_CloseForm.TabIndex = 24;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Poppins Medium", 11.25F);
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(133, 6);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(155, 26);
+            this.labelControl1.TabIndex = 2;
+            this.labelControl1.Text = "Student Information";
+            // 
+            // pe_QRCode
+            // 
+            this.pe_QRCode.Location = new System.Drawing.Point(16, 61);
+            this.pe_QRCode.Name = "pe_QRCode";
+            this.pe_QRCode.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pe_QRCode.Size = new System.Drawing.Size(420, 607);
+            this.pe_QRCode.StyleController = this.layoutControl2;
+            this.pe_QRCode.TabIndex = 6;
+            // 
+            // label_IDNumber1
+            // 
+            this.label_IDNumber1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Report.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(182)))), ((int)(((byte)(125)))));
-            this.btn_Report.Appearance.Font = new System.Drawing.Font("Poppins", 12.08F);
-            this.btn_Report.Appearance.ForeColor = System.Drawing.Color.White;
-            this.btn_Report.Appearance.Options.UseBackColor = true;
-            this.btn_Report.Appearance.Options.UseFont = true;
-            this.btn_Report.Appearance.Options.UseForeColor = true;
-            this.btn_Report.Appearance.Options.UseTextOptions = true;
-            this.btn_Report.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.btn_Report.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.btn_Report.ImageOptions.SvgImageSize = new System.Drawing.Size(26, 26);
-            this.btn_Report.Location = new System.Drawing.Point(763, 28);
-            this.btn_Report.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Report.Name = "btn_Report";
-            this.btn_Report.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_Report.Size = new System.Drawing.Size(234, 48);
-            this.btn_Report.TabIndex = 13;
-            this.btn_Report.Text = "Report";
+            this.label_IDNumber1.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label_IDNumber1.Appearance.Options.UseFont = true;
+            this.label_IDNumber1.Location = new System.Drawing.Point(29, 687);
+            this.label_IDNumber1.Name = "label_IDNumber1";
+            this.label_IDNumber1.Size = new System.Drawing.Size(86, 28);
+            this.label_IDNumber1.StyleController = this.layoutControl2;
+            this.label_IDNumber1.TabIndex = 0;
+            this.label_IDNumber1.Text = "ID Number:";
             // 
-            // label_PageTitle
+            // txt_SchoolStudentId
             // 
-            this.label_PageTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label_PageTitle.Appearance.Font = new System.Drawing.Font("Poppins", 17.71F, System.Drawing.FontStyle.Bold);
-            this.label_PageTitle.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.label_PageTitle.Appearance.Options.UseFont = true;
-            this.label_PageTitle.Location = new System.Drawing.Point(31, 17);
-            this.label_PageTitle.Margin = new System.Windows.Forms.Padding(4);
-            this.label_PageTitle.Name = "label_PageTitle";
-            this.label_PageTitle.Size = new System.Drawing.Size(251, 42);
-            this.label_PageTitle.TabIndex = 0;
-            this.label_PageTitle.Text = "Attendance Records";
+            this.txt_SchoolStudentId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_SchoolStudentId.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.txt_SchoolStudentId.Appearance.Options.UseFont = true;
+            this.txt_SchoolStudentId.Location = new System.Drawing.Point(121, 687);
+            this.txt_SchoolStudentId.Name = "txt_SchoolStudentId";
+            this.txt_SchoolStudentId.Size = new System.Drawing.Size(85, 28);
+            this.txt_SchoolStudentId.StyleController = this.layoutControl2;
+            this.txt_SchoolStudentId.TabIndex = 5;
+            this.txt_SchoolStudentId.Text = "2023-0444";
             // 
-            // label_PageDescription
+            // label_Name1
             // 
-            this.label_PageDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label_PageDescription.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label_PageDescription.Appearance.Options.UseFont = true;
-            this.label_PageDescription.Location = new System.Drawing.Point(31, 53);
-            this.label_PageDescription.Margin = new System.Windows.Forms.Padding(4);
-            this.label_PageDescription.Name = "label_PageDescription";
-            this.label_PageDescription.Size = new System.Drawing.Size(379, 28);
-            this.label_PageDescription.TabIndex = 1;
-            this.label_PageDescription.Text = "View and manage student attendance records.";
+            this.label_Name1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Name1.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label_Name1.Appearance.Options.UseFont = true;
+            this.label_Name1.Location = new System.Drawing.Point(29, 721);
+            this.label_Name1.Name = "label_Name1";
+            this.label_Name1.Size = new System.Drawing.Size(51, 28);
+            this.label_Name1.StyleController = this.layoutControl2;
+            this.label_Name1.TabIndex = 1;
+            this.label_Name1.Text = "Name:";
             // 
-            // panel_SearchBar
+            // txt_Name
             // 
-            this.panel_SearchBar.Controls.Add(this.findPanel);
-            this.panel_SearchBar.Location = new System.Drawing.Point(16, 119);
-            this.panel_SearchBar.Name = "panel_SearchBar";
-            this.panel_SearchBar.Size = new System.Drawing.Size(675, 38);
-            this.panel_SearchBar.TabIndex = 8;
+            this.txt_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Name.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.txt_Name.Appearance.Options.UseFont = true;
+            this.txt_Name.Location = new System.Drawing.Point(86, 721);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.Size = new System.Drawing.Size(170, 28);
+            this.txt_Name.StyleController = this.layoutControl2;
+            this.txt_Name.TabIndex = 6;
+            this.txt_Name.Text = "Den Mark Caoile Enoy";
             // 
-            // findPanel
+            // label_Email1
             // 
-            this.findPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.findPanel.Location = new System.Drawing.Point(2, 2);
-            this.findPanel.Name = "findPanel";
-            this.findPanel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.findPanel.Size = new System.Drawing.Size(671, 34);
-            this.findPanel.TabIndex = 0;
-            this.findPanel.TextChanged += new System.EventHandler(this.findPanel_TextChanged);
+            this.label_Email1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Email1.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label_Email1.Appearance.Options.UseFont = true;
+            this.label_Email1.Location = new System.Drawing.Point(29, 789);
+            this.label_Email1.Name = "label_Email1";
+            this.label_Email1.Size = new System.Drawing.Size(46, 28);
+            this.label_Email1.StyleController = this.layoutControl2;
+            this.label_Email1.TabIndex = 2;
+            this.label_Email1.Text = "Email:";
             // 
-            // panel_CourseFilter
+            // txt_Email
             // 
-            this.panel_CourseFilter.Controls.Add(this.cbe_Course);
-            this.panel_CourseFilter.Location = new System.Drawing.Point(697, 119);
-            this.panel_CourseFilter.Name = "panel_CourseFilter";
-            this.panel_CourseFilter.Size = new System.Drawing.Size(201, 38);
-            this.panel_CourseFilter.TabIndex = 9;
+            this.txt_Email.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Email.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.txt_Email.Appearance.Options.UseFont = true;
+            this.txt_Email.Location = new System.Drawing.Point(81, 789);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(193, 28);
+            this.txt_Email.StyleController = this.layoutControl2;
+            this.txt_Email.TabIndex = 7;
+            this.txt_Email.Text = "den_enoy@dmc.edu.ph";
             // 
-            // cbe_Course
+            // label_Course1
             // 
-            this.cbe_Course.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbe_Course.EditValue = "Course";
-            this.cbe_Course.Location = new System.Drawing.Point(2, 2);
-            this.cbe_Course.Name = "cbe_Course";
-            this.cbe_Course.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.label_Course1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Course1.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label_Course1.Appearance.Options.UseFont = true;
+            this.label_Course1.Location = new System.Drawing.Point(29, 823);
+            this.label_Course1.Name = "label_Course1";
+            this.label_Course1.Size = new System.Drawing.Size(59, 28);
+            this.label_Course1.StyleController = this.layoutControl2;
+            this.label_Course1.TabIndex = 3;
+            this.label_Course1.Text = "Course:";
+            // 
+            // txt_Course
+            // 
+            this.txt_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Course.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.txt_Course.Appearance.Options.UseFont = true;
+            this.txt_Course.Location = new System.Drawing.Point(94, 823);
+            this.txt_Course.Name = "txt_Course";
+            this.txt_Course.Size = new System.Drawing.Size(31, 28);
+            this.txt_Course.StyleController = this.layoutControl2;
+            this.txt_Course.TabIndex = 8;
+            this.txt_Course.Text = "BSIT";
+            // 
+            // label_YearLevel1
+            // 
+            this.label_YearLevel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_YearLevel1.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label_YearLevel1.Appearance.Options.UseFont = true;
+            this.label_YearLevel1.Location = new System.Drawing.Point(29, 755);
+            this.label_YearLevel1.Name = "label_YearLevel1";
+            this.label_YearLevel1.Size = new System.Drawing.Size(83, 28);
+            this.label_YearLevel1.StyleController = this.layoutControl2;
+            this.label_YearLevel1.TabIndex = 4;
+            this.label_YearLevel1.Text = "Year Level:";
+            // 
+            // txt_YearLevel
+            // 
+            this.txt_YearLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_YearLevel.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.txt_YearLevel.Appearance.Options.UseFont = true;
+            this.txt_YearLevel.Location = new System.Drawing.Point(118, 755);
+            this.txt_YearLevel.Name = "txt_YearLevel";
+            this.txt_YearLevel.Size = new System.Drawing.Size(9, 28);
+            this.txt_YearLevel.StyleController = this.layoutControl2;
+            this.txt_YearLevel.TabIndex = 9;
+            this.txt_YearLevel.Text = "2";
+            // 
+            // lcg_StudentInformation
+            // 
+            this.lcg_StudentInformation.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.lcg_StudentInformation.GroupBordersVisible = false;
+            this.lcg_StudentInformation.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem16,
+            this.layoutControlGroup4,
+            this.layoutControlItem2});
+            this.lcg_StudentInformation.Name = "lcg_StudentInformation";
+            this.lcg_StudentInformation.Size = new System.Drawing.Size(452, 880);
+            this.lcg_StudentInformation.TextVisible = false;
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.Control = this.pe_QRCode;
+            this.layoutControlItem16.Location = new System.Drawing.Point(0, 45);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.Size = new System.Drawing.Size(426, 613);
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem16.TextVisible = false;
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.CustomizationFormText = "Root";
+            this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup4.GroupBordersVisible = false;
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem19,
+            this.layoutControlItem21,
+            this.layoutControlItem20,
+            this.layoutControlItem23,
+            this.layoutControlItem17,
+            this.layoutControlItem22,
+            this.layoutControlItem24,
+            this.layoutControlItem18,
+            this.layoutControlItem25,
+            this.layoutControlItem26});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 658);
+            this.layoutControlGroup4.Name = "layoutControlGroup4";
+            this.layoutControlGroup4.OptionsItemText.TextToControlDistance = 6;
+            this.layoutControlGroup4.Size = new System.Drawing.Size(426, 196);
+            this.layoutControlGroup4.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroup4.Text = "Root";
+            // 
+            // layoutControlItem19
+            // 
+            this.layoutControlItem19.Control = this.label_Name1;
+            this.layoutControlItem19.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem19.CustomizationFormText = "layoutControlItem4";
+            this.layoutControlItem19.Location = new System.Drawing.Point(0, 34);
+            this.layoutControlItem19.Name = "layoutControlItem19";
+            this.layoutControlItem19.Size = new System.Drawing.Size(57, 34);
+            this.layoutControlItem19.Text = "layoutControlItem4";
+            this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem19.TextVisible = false;
+            // 
+            // layoutControlItem21
+            // 
+            this.layoutControlItem21.Control = this.label_Email1;
+            this.layoutControlItem21.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem21.CustomizationFormText = "layoutControlItem6";
+            this.layoutControlItem21.Location = new System.Drawing.Point(0, 102);
+            this.layoutControlItem21.Name = "layoutControlItem21";
+            this.layoutControlItem21.Size = new System.Drawing.Size(52, 34);
+            this.layoutControlItem21.Text = "layoutControlItem6";
+            this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem21.TextVisible = false;
+            // 
+            // layoutControlItem20
+            // 
+            this.layoutControlItem20.Control = this.txt_Name;
+            this.layoutControlItem20.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem20.CustomizationFormText = "layoutControlItem5";
+            this.layoutControlItem20.Location = new System.Drawing.Point(57, 34);
+            this.layoutControlItem20.Name = "layoutControlItem20";
+            this.layoutControlItem20.Size = new System.Drawing.Size(343, 34);
+            this.layoutControlItem20.Text = "layoutControlItem5";
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem20.TextVisible = false;
+            // 
+            // layoutControlItem23
+            // 
+            this.layoutControlItem23.Control = this.label_Course1;
+            this.layoutControlItem23.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem23.CustomizationFormText = "layoutControlItem8";
+            this.layoutControlItem23.Location = new System.Drawing.Point(0, 136);
+            this.layoutControlItem23.Name = "layoutControlItem23";
+            this.layoutControlItem23.Size = new System.Drawing.Size(65, 34);
+            this.layoutControlItem23.Text = "layoutControlItem8";
+            this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem23.TextVisible = false;
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.Control = this.label_IDNumber1;
+            this.layoutControlItem17.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem17.CustomizationFormText = "layoutControlItem2";
+            this.layoutControlItem17.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Size = new System.Drawing.Size(92, 34);
+            this.layoutControlItem17.Text = "layoutControlItem2";
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem17.TextVisible = false;
+            // 
+            // layoutControlItem22
+            // 
+            this.layoutControlItem22.Control = this.txt_Email;
+            this.layoutControlItem22.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem22.CustomizationFormText = "layoutControlItem7";
+            this.layoutControlItem22.Location = new System.Drawing.Point(52, 102);
+            this.layoutControlItem22.Name = "layoutControlItem22";
+            this.layoutControlItem22.Size = new System.Drawing.Size(348, 34);
+            this.layoutControlItem22.Text = "layoutControlItem7";
+            this.layoutControlItem22.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem22.TextVisible = false;
+            // 
+            // layoutControlItem24
+            // 
+            this.layoutControlItem24.Control = this.txt_Course;
+            this.layoutControlItem24.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem24.CustomizationFormText = "layoutControlItem9";
+            this.layoutControlItem24.Location = new System.Drawing.Point(65, 136);
+            this.layoutControlItem24.Name = "layoutControlItem24";
+            this.layoutControlItem24.Size = new System.Drawing.Size(335, 34);
+            this.layoutControlItem24.Text = "layoutControlItem9";
+            this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem24.TextVisible = false;
+            // 
+            // layoutControlItem18
+            // 
+            this.layoutControlItem18.Control = this.txt_SchoolStudentId;
+            this.layoutControlItem18.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem18.CustomizationFormText = "layoutControlItem3";
+            this.layoutControlItem18.Location = new System.Drawing.Point(92, 0);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(308, 34);
+            this.layoutControlItem18.Text = "layoutControlItem3";
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem18.TextVisible = false;
+            // 
+            // layoutControlItem25
+            // 
+            this.layoutControlItem25.Control = this.label_YearLevel1;
+            this.layoutControlItem25.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem25.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem25.Location = new System.Drawing.Point(0, 68);
+            this.layoutControlItem25.Name = "layoutControlItem25";
+            this.layoutControlItem25.Size = new System.Drawing.Size(89, 34);
+            this.layoutControlItem25.Text = "layoutControlItem10";
+            this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem25.TextVisible = false;
+            // 
+            // layoutControlItem26
+            // 
+            this.layoutControlItem26.Control = this.txt_YearLevel;
+            this.layoutControlItem26.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem26.CustomizationFormText = "layoutControlItem11";
+            this.layoutControlItem26.Location = new System.Drawing.Point(89, 68);
+            this.layoutControlItem26.Name = "layoutControlItem26";
+            this.layoutControlItem26.Size = new System.Drawing.Size(311, 34);
+            this.layoutControlItem26.Text = "layoutControlItem11";
+            this.layoutControlItem26.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem26.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.panelControl3;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(426, 45);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.cbe_FilterYearLevel);
+            this.panelControl1.Controls.Add(this.cbe_FilterCourse);
+            this.panelControl1.Controls.Add(this.gc_Students);
+            this.panelControl1.Location = new System.Drawing.Point(16, 124);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(946, 884);
+            this.panelControl1.TabIndex = 1;
+            // 
+            // cbe_FilterYearLevel
+            // 
+            this.cbe_FilterYearLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbe_FilterYearLevel.EditValue = "Year Level";
+            this.cbe_FilterYearLevel.Location = new System.Drawing.Point(767, 20);
+            this.cbe_FilterYearLevel.Name = "cbe_FilterYearLevel";
+            this.cbe_FilterYearLevel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbe_Course.Properties.Items.AddRange(new object[] {
+            this.cbe_FilterYearLevel.Properties.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cbe_FilterYearLevel.Size = new System.Drawing.Size(168, 34);
+            this.cbe_FilterYearLevel.StyleController = this.layoutControl2;
+            this.cbe_FilterYearLevel.TabIndex = 6;
+            // 
+            // cbe_FilterCourse
+            // 
+            this.cbe_FilterCourse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbe_FilterCourse.EditValue = "Course";
+            this.cbe_FilterCourse.Location = new System.Drawing.Point(570, 20);
+            this.cbe_FilterCourse.Name = "cbe_FilterCourse";
+            this.cbe_FilterCourse.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbe_FilterCourse.Properties.Items.AddRange(new object[] {
             "BSN",
             "BSMT",
             "BS-RADTECH",
@@ -253,68 +566,35 @@
             "BSHM",
             "BSBA",
             "BSED"});
-            this.cbe_Course.Size = new System.Drawing.Size(197, 34);
-            this.cbe_Course.TabIndex = 1;
-            this.cbe_Course.SelectedValueChanged += new System.EventHandler(this.cbe_Course_SelectedValueChanged);
+            this.cbe_FilterCourse.Size = new System.Drawing.Size(191, 34);
+            this.cbe_FilterCourse.StyleController = this.layoutControl2;
+            this.cbe_FilterCourse.TabIndex = 5;
             // 
-            // panel_YearLevelFilter
+            // gc_Students
             // 
-            this.panel_YearLevelFilter.Controls.Add(this.cbe_YearLevel);
-            this.panel_YearLevelFilter.Location = new System.Drawing.Point(904, 119);
-            this.panel_YearLevelFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel_YearLevelFilter.Name = "panel_YearLevelFilter";
-            this.panel_YearLevelFilter.Size = new System.Drawing.Size(118, 38);
-            this.panel_YearLevelFilter.TabIndex = 13;
+            this.gc_Students.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gc_Students.Location = new System.Drawing.Point(2, 2);
+            this.gc_Students.MainView = this.gv_Students;
+            this.gc_Students.Name = "gc_Students";
+            this.gc_Students.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButton_View});
+            this.gc_Students.Size = new System.Drawing.Size(942, 880);
+            this.gc_Students.TabIndex = 1;
+            this.gc_Students.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gv_Students});
             // 
-            // cbe_YearLevel
+            // gv_Students
             // 
-            this.cbe_YearLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbe_YearLevel.EditValue = "Year Level";
-            this.cbe_YearLevel.Location = new System.Drawing.Point(2, 2);
-            this.cbe_YearLevel.Name = "cbe_YearLevel";
-            this.cbe_YearLevel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbe_YearLevel.Properties.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.cbe_YearLevel.Size = new System.Drawing.Size(114, 34);
-            this.cbe_YearLevel.TabIndex = 2;
-            this.cbe_YearLevel.SelectedValueChanged += new System.EventHandler(this.cbe_YearLevel_SelectedValueChanged);
-            // 
-            // panel_PageBody
-            // 
-            this.panel_PageBody.Controls.Add(this.gc_AttendanceRecords);
-            this.panel_PageBody.Location = new System.Drawing.Point(16, 161);
-            this.panel_PageBody.Name = "panel_PageBody";
-            this.panel_PageBody.Size = new System.Drawing.Size(675, 592);
-            this.panel_PageBody.TabIndex = 7;
-            // 
-            // gc_AttendanceRecords
-            // 
-            this.gc_AttendanceRecords.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc_AttendanceRecords.Location = new System.Drawing.Point(2, 2);
-            this.gc_AttendanceRecords.MainView = this.gv_AttendanceRecords;
-            this.gc_AttendanceRecords.Name = "gc_AttendanceRecords";
-            this.gc_AttendanceRecords.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemButton_Action});
-            this.gc_AttendanceRecords.Size = new System.Drawing.Size(671, 588);
-            this.gc_AttendanceRecords.TabIndex = 0;
-            this.gc_AttendanceRecords.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gv_AttendanceRecords});
-            // 
-            // gv_AttendanceRecords
-            // 
-            this.gv_AttendanceRecords.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gv_Students.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.grdclm_SchoolStudentId,
-            this.grdclm_Name,
-            this.grdclm_Action});
-            this.gv_AttendanceRecords.GridControl = this.gc_AttendanceRecords;
-            this.gv_AttendanceRecords.Name = "gv_AttendanceRecords";
-            this.gv_AttendanceRecords.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
-            this.gv_AttendanceRecords.OptionsView.ShowGroupPanel = false;
-            this.gv_AttendanceRecords.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gv_AttendanceRecords_RowClick);
+            this.grdclm_FullName,
+            this.grdclm_View});
+            this.gv_Students.GridControl = this.gc_Students;
+            this.gv_Students.Name = "gv_Students";
+            this.gv_Students.OptionsFind.AlwaysVisible = true;
+            this.gv_Students.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
+            this.gv_Students.OptionsView.ShowGroupPanel = false;
+            this.gv_Students.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gv_Students_RowClick);
             // 
             // grdclm_SchoolStudentId
             // 
@@ -327,204 +607,75 @@
             this.grdclm_SchoolStudentId.Visible = true;
             this.grdclm_SchoolStudentId.VisibleIndex = 0;
             // 
-            // grdclm_Name
+            // grdclm_FullName
             // 
-            this.grdclm_Name.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdclm_Name.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdclm_Name.Caption = "Name";
-            this.grdclm_Name.FieldName = "FullName";
-            this.grdclm_Name.Name = "grdclm_Name";
-            this.grdclm_Name.OptionsColumn.AllowEdit = false;
-            this.grdclm_Name.Visible = true;
-            this.grdclm_Name.VisibleIndex = 1;
+            this.grdclm_FullName.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdclm_FullName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdclm_FullName.Caption = "Name";
+            this.grdclm_FullName.FieldName = "FullName";
+            this.grdclm_FullName.Name = "grdclm_FullName";
+            this.grdclm_FullName.OptionsColumn.AllowEdit = false;
+            this.grdclm_FullName.Visible = true;
+            this.grdclm_FullName.VisibleIndex = 1;
             // 
-            // grdclm_Action
+            // grdclm_View
             // 
-            this.grdclm_Action.AppearanceHeader.Options.UseTextOptions = true;
-            this.grdclm_Action.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.grdclm_Action.Caption = "Action";
-            this.grdclm_Action.ColumnEdit = this.repositoryItemButton_Action;
-            this.grdclm_Action.Name = "grdclm_Action";
-            this.grdclm_Action.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
-            this.grdclm_Action.Visible = true;
-            this.grdclm_Action.VisibleIndex = 2;
+            this.grdclm_View.AppearanceHeader.Options.UseTextOptions = true;
+            this.grdclm_View.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.grdclm_View.Caption = "View";
+            this.grdclm_View.ColumnEdit = this.repositoryItemButton_View;
+            this.grdclm_View.Name = "grdclm_View";
+            this.grdclm_View.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
+            this.grdclm_View.Visible = true;
+            this.grdclm_View.VisibleIndex = 2;
             // 
-            // repositoryItemButton_Action
+            // repositoryItemButton_View
             // 
-            this.repositoryItemButton_Action.AutoHeight = false;
-            editorButtonImageOptions6.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions6.SvgImage")));
-            editorButtonImageOptions6.SvgImageSize = new System.Drawing.Size(16, 16);
-            this.repositoryItemButton_Action.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.repositoryItemButton_Action.Name = "repositoryItemButton_Action";
-            this.repositoryItemButton_Action.ReadOnly = true;
-            this.repositoryItemButton_Action.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.repositoryItemButton_Action.Click += new System.EventHandler(this.repositoryItemButton_Action_Click);
+            this.repositoryItemButton_View.AutoHeight = false;
+            editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
+            editorButtonImageOptions2.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.repositoryItemButton_View.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemButton_View.Name = "repositoryItemButton_View";
+            this.repositoryItemButton_View.ReadOnly = true;
+            this.repositoryItemButton_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repositoryItemButton_View.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButton_View_ButtonClick);
             // 
-            // panel_QRCode
+            // panel_PageHeading
             // 
-            this.panel_QRCode.Controls.Add(this.pe_QRCode);
-            this.panel_QRCode.Location = new System.Drawing.Point(697, 161);
-            this.panel_QRCode.Name = "panel_QRCode";
-            this.panel_QRCode.Size = new System.Drawing.Size(325, 291);
-            this.panel_QRCode.TabIndex = 10;
+            this.panel_PageHeading.Controls.Add(this.label_PageTitle);
+            this.panel_PageHeading.Controls.Add(this.label_PageDescription);
+            this.panel_PageHeading.Location = new System.Drawing.Point(16, 15);
+            this.panel_PageHeading.Name = "panel_PageHeading";
+            this.panel_PageHeading.Size = new System.Drawing.Size(1408, 104);
+            this.panel_PageHeading.TabIndex = 12;
             // 
-            // pe_QRCode
+            // label_PageTitle
             // 
-            this.pe_QRCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pe_QRCode.Location = new System.Drawing.Point(2, 2);
-            this.pe_QRCode.Name = "pe_QRCode";
-            this.pe_QRCode.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pe_QRCode.Size = new System.Drawing.Size(321, 287);
-            this.pe_QRCode.TabIndex = 2;
+            this.label_PageTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label_PageTitle.Appearance.Font = new System.Drawing.Font("Poppins", 17.71F, System.Drawing.FontStyle.Bold);
+            this.label_PageTitle.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.label_PageTitle.Appearance.Options.UseFont = true;
+            this.label_PageTitle.Location = new System.Drawing.Point(31, 20);
+            this.label_PageTitle.Margin = new System.Windows.Forms.Padding(4);
+            this.label_PageTitle.Name = "label_PageTitle";
+            this.label_PageTitle.Size = new System.Drawing.Size(251, 42);
+            this.label_PageTitle.TabIndex = 0;
+            this.label_PageTitle.Text = "Attendance Records";
             // 
-            // panel_StudentInfo
+            // label_PageDescription
             // 
-            this.panel_StudentInfo.Controls.Add(this.layoutControl1);
-            this.panel_StudentInfo.Location = new System.Drawing.Point(697, 456);
-            this.panel_StudentInfo.Name = "panel_StudentInfo";
-            this.panel_StudentInfo.Size = new System.Drawing.Size(325, 297);
-            this.panel_StudentInfo.TabIndex = 11;
-            // 
-            // txt_YearLevel
-            // 
-            this.txt_YearLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_YearLevel.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txt_YearLevel.Appearance.Options.UseFont = true;
-            this.txt_YearLevel.Location = new System.Drawing.Point(105, 152);
-            this.txt_YearLevel.Name = "txt_YearLevel";
-            this.txt_YearLevel.Size = new System.Drawing.Size(9, 28);
-            this.txt_YearLevel.StyleController = this.layoutControl1;
-            this.txt_YearLevel.TabIndex = 9;
-            this.txt_YearLevel.Text = "2";
-            // 
-            // txt_Course
-            // 
-            this.txt_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Course.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txt_Course.Appearance.Options.UseFont = true;
-            this.txt_Course.Location = new System.Drawing.Point(105, 118);
-            this.txt_Course.Name = "txt_Course";
-            this.txt_Course.Size = new System.Drawing.Size(31, 28);
-            this.txt_Course.StyleController = this.layoutControl1;
-            this.txt_Course.TabIndex = 8;
-            this.txt_Course.Text = "BSIT";
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Email.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txt_Email.Appearance.Options.UseFont = true;
-            this.txt_Email.Location = new System.Drawing.Point(105, 84);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(193, 28);
-            this.txt_Email.StyleController = this.layoutControl1;
-            this.txt_Email.TabIndex = 7;
-            this.txt_Email.Text = "den_enoy@dmc.edu.ph";
-            // 
-            // txt_Name
-            // 
-            this.txt_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Name.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txt_Name.Appearance.Options.UseFont = true;
-            this.txt_Name.Location = new System.Drawing.Point(105, 50);
-            this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(170, 28);
-            this.txt_Name.StyleController = this.layoutControl1;
-            this.txt_Name.TabIndex = 6;
-            this.txt_Name.Text = "Den Mark Caoile Enoy";
-            // 
-            // txt_SchoolStudentId
-            // 
-            this.txt_SchoolStudentId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_SchoolStudentId.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txt_SchoolStudentId.Appearance.Options.UseFont = true;
-            this.txt_SchoolStudentId.Location = new System.Drawing.Point(108, 16);
-            this.txt_SchoolStudentId.Name = "txt_SchoolStudentId";
-            this.txt_SchoolStudentId.Size = new System.Drawing.Size(85, 28);
-            this.txt_SchoolStudentId.StyleController = this.layoutControl1;
-            this.txt_SchoolStudentId.TabIndex = 5;
-            this.txt_SchoolStudentId.Text = "2023-0444";
-            // 
-            // label_YearLevel
-            // 
-            this.label_YearLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_YearLevel.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label_YearLevel.Appearance.Options.UseFont = true;
-            this.label_YearLevel.Location = new System.Drawing.Point(16, 152);
-            this.label_YearLevel.Name = "label_YearLevel";
-            this.label_YearLevel.Size = new System.Drawing.Size(83, 28);
-            this.label_YearLevel.StyleController = this.layoutControl1;
-            this.label_YearLevel.TabIndex = 4;
-            this.label_YearLevel.Text = "Year Level:";
-            // 
-            // label_Course
-            // 
-            this.label_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Course.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label_Course.Appearance.Options.UseFont = true;
-            this.label_Course.Location = new System.Drawing.Point(16, 118);
-            this.label_Course.Name = "label_Course";
-            this.label_Course.Size = new System.Drawing.Size(59, 28);
-            this.label_Course.StyleController = this.layoutControl1;
-            this.label_Course.TabIndex = 3;
-            this.label_Course.Text = "Course:";
-            // 
-            // label_Email
-            // 
-            this.label_Email.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Email.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label_Email.Appearance.Options.UseFont = true;
-            this.label_Email.Location = new System.Drawing.Point(16, 84);
-            this.label_Email.Name = "label_Email";
-            this.label_Email.Size = new System.Drawing.Size(46, 28);
-            this.label_Email.StyleController = this.layoutControl1;
-            this.label_Email.TabIndex = 2;
-            this.label_Email.Text = "Email:";
-            // 
-            // label_Name
-            // 
-            this.label_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Name.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label_Name.Appearance.Options.UseFont = true;
-            this.label_Name.Location = new System.Drawing.Point(16, 50);
-            this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(51, 28);
-            this.label_Name.StyleController = this.layoutControl1;
-            this.label_Name.TabIndex = 1;
-            this.label_Name.Text = "Name:";
-            // 
-            // label_IDNumber
-            // 
-            this.label_IDNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_IDNumber.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label_IDNumber.Appearance.Options.UseFont = true;
-            this.label_IDNumber.Location = new System.Drawing.Point(16, 16);
-            this.label_IDNumber.Name = "label_IDNumber";
-            this.label_IDNumber.Size = new System.Drawing.Size(86, 28);
-            this.label_IDNumber.StyleController = this.layoutControl1;
-            this.label_IDNumber.TabIndex = 0;
-            this.label_IDNumber.Text = "ID Number:";
+            this.label_PageDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label_PageDescription.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.label_PageDescription.Appearance.Options.UseFont = true;
+            this.label_PageDescription.Location = new System.Drawing.Point(31, 56);
+            this.label_PageDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.label_PageDescription.Name = "label_PageDescription";
+            this.label_PageDescription.Size = new System.Drawing.Size(379, 28);
+            this.label_PageDescription.TabIndex = 1;
+            this.label_PageDescription.Text = "View and manage student attendance records.";
             // 
             // Root
             // 
@@ -532,14 +683,10 @@
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.lci_PageHeading,
-            this.lci_FindPanel,
-            this.lci_PageBody,
-            this.lci_CourseFilter,
-            this.lci_YearLevel,
-            this.lci_QRCode,
-            this.lci_StudentInfo});
+            this.lci_StudentInformation,
+            this.layoutControlItem12});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1038, 768);
+            this.Root.Size = new System.Drawing.Size(1440, 1024);
             this.Root.TextVisible = false;
             // 
             // lci_PageHeading
@@ -550,210 +697,27 @@
             this.lci_PageHeading.Location = new System.Drawing.Point(0, 0);
             this.lci_PageHeading.Name = "lci_PageHeading";
             this.lci_PageHeading.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_PageHeading.Size = new System.Drawing.Size(1012, 104);
+            this.lci_PageHeading.Size = new System.Drawing.Size(1414, 108);
             this.lci_PageHeading.TextSize = new System.Drawing.Size(0, 0);
             this.lci_PageHeading.TextVisible = false;
             // 
-            // lci_FindPanel
+            // lci_StudentInformation
             // 
-            this.lci_FindPanel.Control = this.panel_SearchBar;
-            this.lci_FindPanel.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lci_FindPanel.CustomizationFormText = "lci_SearchBar";
-            this.lci_FindPanel.Location = new System.Drawing.Point(0, 104);
-            this.lci_FindPanel.Name = "lci_FindPanel";
-            this.lci_FindPanel.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_FindPanel.Size = new System.Drawing.Size(681, 42);
-            this.lci_FindPanel.TextSize = new System.Drawing.Size(0, 0);
-            this.lci_FindPanel.TextVisible = false;
+            this.lci_StudentInformation.Control = this.panelControl1;
+            this.lci_StudentInformation.Location = new System.Drawing.Point(0, 108);
+            this.lci_StudentInformation.Name = "lci_StudentInformation";
+            this.lci_StudentInformation.Size = new System.Drawing.Size(952, 890);
+            this.lci_StudentInformation.TextSize = new System.Drawing.Size(0, 0);
+            this.lci_StudentInformation.TextVisible = false;
             // 
-            // lci_PageBody
+            // layoutControlItem12
             // 
-            this.lci_PageBody.Control = this.panel_PageBody;
-            this.lci_PageBody.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lci_PageBody.CustomizationFormText = "layoutControlItem1";
-            this.lci_PageBody.Location = new System.Drawing.Point(0, 146);
-            this.lci_PageBody.Name = "lci_PageBody";
-            this.lci_PageBody.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_PageBody.Size = new System.Drawing.Size(681, 596);
-            this.lci_PageBody.Text = "layoutControlItem1";
-            this.lci_PageBody.TextSize = new System.Drawing.Size(0, 0);
-            this.lci_PageBody.TextVisible = false;
-            // 
-            // lci_CourseFilter
-            // 
-            this.lci_CourseFilter.Control = this.panel_CourseFilter;
-            this.lci_CourseFilter.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lci_CourseFilter.CustomizationFormText = "lci_FilterSection";
-            this.lci_CourseFilter.Location = new System.Drawing.Point(681, 104);
-            this.lci_CourseFilter.Name = "lci_CourseFilter";
-            this.lci_CourseFilter.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_CourseFilter.Size = new System.Drawing.Size(207, 42);
-            this.lci_CourseFilter.TextSize = new System.Drawing.Size(0, 0);
-            this.lci_CourseFilter.TextVisible = false;
-            // 
-            // lci_YearLevel
-            // 
-            this.lci_YearLevel.Control = this.panel_YearLevelFilter;
-            this.lci_YearLevel.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lci_YearLevel.CustomizationFormText = "lci_YearLevel";
-            this.lci_YearLevel.Location = new System.Drawing.Point(888, 104);
-            this.lci_YearLevel.Name = "lci_YearLevel";
-            this.lci_YearLevel.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_YearLevel.Size = new System.Drawing.Size(124, 42);
-            this.lci_YearLevel.TextSize = new System.Drawing.Size(0, 0);
-            this.lci_YearLevel.TextVisible = false;
-            // 
-            // lci_QRCode
-            // 
-            this.lci_QRCode.Control = this.panel_QRCode;
-            this.lci_QRCode.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lci_QRCode.CustomizationFormText = "lci_QRCode";
-            this.lci_QRCode.Location = new System.Drawing.Point(681, 146);
-            this.lci_QRCode.Name = "lci_QRCode";
-            this.lci_QRCode.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_QRCode.Size = new System.Drawing.Size(331, 295);
-            this.lci_QRCode.TextSize = new System.Drawing.Size(0, 0);
-            this.lci_QRCode.TextVisible = false;
-            // 
-            // lci_StudentInfo
-            // 
-            this.lci_StudentInfo.Control = this.panel_StudentInfo;
-            this.lci_StudentInfo.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lci_StudentInfo.CustomizationFormText = "lci_StudentInfo";
-            this.lci_StudentInfo.Location = new System.Drawing.Point(681, 441);
-            this.lci_StudentInfo.Name = "lci_StudentInfo";
-            this.lci_StudentInfo.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 2, 2);
-            this.lci_StudentInfo.Size = new System.Drawing.Size(331, 301);
-            this.lci_StudentInfo.TextSize = new System.Drawing.Size(0, 0);
-            this.lci_StudentInfo.TextVisible = false;
-            // 
-            // layoutControl1
-            // 
-            this.layoutControl1.Controls.Add(this.txt_YearLevel);
-            this.layoutControl1.Controls.Add(this.label_IDNumber);
-            this.layoutControl1.Controls.Add(this.label_YearLevel);
-            this.layoutControl1.Controls.Add(this.txt_Course);
-            this.layoutControl1.Controls.Add(this.label_Name);
-            this.layoutControl1.Controls.Add(this.txt_Email);
-            this.layoutControl1.Controls.Add(this.label_Course);
-            this.layoutControl1.Controls.Add(this.txt_Name);
-            this.layoutControl1.Controls.Add(this.label_Email);
-            this.layoutControl1.Controls.Add(this.txt_SchoolStudentId);
-            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(2, 2);
-            this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(321, 293);
-            this.layoutControl1.TabIndex = 10;
-            this.layoutControl1.Text = "layoutControl1";
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem4,
-            this.layoutControlItem5,
-            this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.layoutControlItem8,
-            this.layoutControlItem9,
-            this.layoutControlItem10,
-            this.layoutControlItem11});
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(321, 293);
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.label_IDNumber;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(92, 34);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.txt_SchoolStudentId;
-            this.layoutControlItem3.Location = new System.Drawing.Point(92, 0);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(203, 34);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.label_Name;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 34);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(89, 34);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
-            // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.txt_Name;
-            this.layoutControlItem5.Location = new System.Drawing.Point(89, 34);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(206, 34);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.label_Email;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 68);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(89, 34);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
-            // 
-            // layoutControlItem7
-            // 
-            this.layoutControlItem7.Control = this.txt_Email;
-            this.layoutControlItem7.Location = new System.Drawing.Point(89, 68);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(206, 34);
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem7.TextVisible = false;
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.label_Course;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 102);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(89, 34);
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextVisible = false;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.txt_Course;
-            this.layoutControlItem9.Location = new System.Drawing.Point(89, 102);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(206, 34);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.label_YearLevel;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 136);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(89, 131);
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem10.TextVisible = false;
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.Control = this.txt_YearLevel;
-            this.layoutControlItem11.Location = new System.Drawing.Point(89, 136);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(206, 131);
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem11.TextVisible = false;
+            this.layoutControlItem12.Control = this.panelControl2;
+            this.layoutControlItem12.Location = new System.Drawing.Point(952, 108);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.Size = new System.Drawing.Size(462, 890);
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem12.TextVisible = false;
             // 
             // AttendanceRecords_UserControl
             // 
@@ -761,52 +725,47 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lc_AttendanceRecords);
             this.Name = "AttendanceRecords_UserControl";
-            this.Size = new System.Drawing.Size(1038, 768);
+            this.Size = new System.Drawing.Size(1440, 1024);
+            this.Load += new System.EventHandler(this.AttendanceRecords_UserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lc_AttendanceRecords)).EndInit();
             this.lc_AttendanceRecords.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
+            this.layoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            this.panelControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CloseForm.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pe_QRCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcg_StudentInformation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cbe_FilterYearLevel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbe_FilterCourse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Students)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Students)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButton_View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_PageHeading)).EndInit();
             this.panel_PageHeading.ResumeLayout(false);
             this.panel_PageHeading.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_SearchBar)).EndInit();
-            this.panel_SearchBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.findPanel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_CourseFilter)).EndInit();
-            this.panel_CourseFilter.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cbe_Course.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_YearLevelFilter)).EndInit();
-            this.panel_YearLevelFilter.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cbe_YearLevel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_PageBody)).EndInit();
-            this.panel_PageBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gc_AttendanceRecords)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_AttendanceRecords)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButton_Action)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_QRCode)).EndInit();
-            this.panel_QRCode.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pe_QRCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_StudentInfo)).EndInit();
-            this.panel_StudentInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lci_PageHeading)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_FindPanel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_PageBody)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_CourseFilter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_YearLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_QRCode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_StudentInfo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
-            this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lci_StudentInformation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -816,53 +775,49 @@
         private DevExpress.XtraLayout.LayoutControl lc_AttendanceRecords;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraEditors.PanelControl panel_PageHeading;
-        private DevExpress.XtraEditors.SimpleButton btn_Report;
         private DevExpress.XtraEditors.LabelControl label_PageTitle;
         private DevExpress.XtraEditors.LabelControl label_PageDescription;
         private DevExpress.XtraLayout.LayoutControlItem lci_PageHeading;
-        private DevExpress.XtraEditors.PanelControl panel_SearchBar;
-        private DevExpress.XtraEditors.SearchControl findPanel;
-        private DevExpress.XtraLayout.LayoutControlItem lci_FindPanel;
-        private DevExpress.XtraEditors.PanelControl panel_CourseFilter;
-        private DevExpress.XtraLayout.LayoutControlItem lci_CourseFilter;
-        private DevExpress.XtraEditors.PanelControl panel_YearLevelFilter;
-        private DevExpress.XtraLayout.LayoutControlItem lci_YearLevel;
-        private DevExpress.XtraEditors.PanelControl panel_PageBody;
-        private DevExpress.XtraGrid.GridControl gc_AttendanceRecords;
-        private DevExpress.XtraGrid.Views.Grid.GridView gv_AttendanceRecords;
-        private DevExpress.XtraGrid.Columns.GridColumn grdclm_SchoolStudentId;
-        private DevExpress.XtraGrid.Columns.GridColumn grdclm_Name;
-        private DevExpress.XtraGrid.Columns.GridColumn grdclm_Action;
-        private DevExpress.XtraLayout.LayoutControlItem lci_PageBody;
-        private DevExpress.XtraEditors.PanelControl panel_QRCode;
-        private DevExpress.XtraLayout.LayoutControlItem lci_QRCode;
-        private DevExpress.XtraEditors.PanelControl panel_StudentInfo;
-        private DevExpress.XtraEditors.LabelControl label_YearLevel;
-        private DevExpress.XtraEditors.LabelControl label_Course;
-        private DevExpress.XtraEditors.LabelControl label_Email;
-        private DevExpress.XtraEditors.LabelControl label_Name;
-        private DevExpress.XtraEditors.LabelControl label_IDNumber;
-        private DevExpress.XtraLayout.LayoutControlItem lci_StudentInfo;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraLayout.LayoutControl layoutControl2;
         private DevExpress.XtraEditors.PictureEdit pe_QRCode;
-        private DevExpress.XtraEditors.ComboBoxEdit cbe_Course;
-        private DevExpress.XtraEditors.ComboBoxEdit cbe_YearLevel;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButton_Action;
-        private DevExpress.XtraEditors.LabelControl txt_YearLevel;
-        private DevExpress.XtraEditors.LabelControl txt_Course;
-        private DevExpress.XtraEditors.LabelControl txt_Email;
-        private DevExpress.XtraEditors.LabelControl txt_Name;
+        private DevExpress.XtraLayout.LayoutControlGroup lcg_StudentInformation;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraGrid.GridControl gc_Students;
+        private DevExpress.XtraGrid.Views.Grid.GridView gv_Students;
+        private DevExpress.XtraGrid.Columns.GridColumn grdclm_SchoolStudentId;
+        private DevExpress.XtraGrid.Columns.GridColumn grdclm_FullName;
+        private DevExpress.XtraGrid.Columns.GridColumn grdclm_View;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButton_View;
+        private DevExpress.XtraLayout.LayoutControlItem lci_StudentInformation;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraEditors.LabelControl label_IDNumber1;
         private DevExpress.XtraEditors.LabelControl txt_SchoolStudentId;
-        private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraEditors.LabelControl label_Name1;
+        private DevExpress.XtraEditors.LabelControl txt_Name;
+        private DevExpress.XtraEditors.LabelControl label_Email1;
+        private DevExpress.XtraEditors.LabelControl txt_Email;
+        private DevExpress.XtraEditors.LabelControl label_Course1;
+        private DevExpress.XtraEditors.LabelControl txt_Course;
+        private DevExpress.XtraEditors.LabelControl label_YearLevel1;
+        private DevExpress.XtraEditors.LabelControl txt_YearLevel;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem25;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.PictureEdit btn_CloseForm;
+        private DevExpress.XtraEditors.ComboBoxEdit cbe_FilterYearLevel;
+        private DevExpress.XtraEditors.ComboBoxEdit cbe_FilterCourse;
     }
 }

@@ -92,16 +92,16 @@
             this.lc_QRScanner.Location = new System.Drawing.Point(0, 0);
             this.lc_QRScanner.Name = "lc_QRScanner";
             this.lc_QRScanner.Root = this.Root;
-            this.lc_QRScanner.Size = new System.Drawing.Size(1038, 768);
+            this.lc_QRScanner.Size = new System.Drawing.Size(1440, 1024);
             this.lc_QRScanner.TabIndex = 0;
             this.lc_QRScanner.Text = "layoutControl1";
             // 
             // panel_StartScan
             // 
             this.panel_StartScan.Controls.Add(this.btn_StartScan);
-            this.panel_StartScan.Location = new System.Drawing.Point(790, 710);
+            this.panel_StartScan.Location = new System.Drawing.Point(1097, 966);
             this.panel_StartScan.Name = "panel_StartScan";
-            this.panel_StartScan.Size = new System.Drawing.Size(232, 42);
+            this.panel_StartScan.Size = new System.Drawing.Size(327, 42);
             this.panel_StartScan.TabIndex = 10;
             // 
             // btn_StartScan
@@ -114,7 +114,7 @@
             this.btn_StartScan.Location = new System.Drawing.Point(2, 2);
             this.btn_StartScan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_StartScan.Name = "btn_StartScan";
-            this.btn_StartScan.Size = new System.Drawing.Size(228, 38);
+            this.btn_StartScan.Size = new System.Drawing.Size(323, 38);
             this.btn_StartScan.StyleController = this.lci_RightPanel;
             this.btn_StartScan.TabIndex = 9;
             this.btn_StartScan.Text = "Start Scan";
@@ -128,7 +128,7 @@
             this.lci_RightPanel.Location = new System.Drawing.Point(2, 2);
             this.lci_RightPanel.Name = "lci_RightPanel";
             this.lci_RightPanel.Root = this.lcg;
-            this.lci_RightPanel.Size = new System.Drawing.Size(450, 586);
+            this.lci_RightPanel.Size = new System.Drawing.Size(633, 832);
             this.lci_RightPanel.TabIndex = 0;
             this.lci_RightPanel.Text = "layoutControl1";
             // 
@@ -137,17 +137,19 @@
             this.panel_QRCodeValue.Controls.Add(this.txt_QRValue);
             this.panel_QRCodeValue.Location = new System.Drawing.Point(3, 43);
             this.panel_QRCodeValue.Name = "panel_QRCodeValue";
-            this.panel_QRCodeValue.Size = new System.Drawing.Size(444, 540);
+            this.panel_QRCodeValue.Size = new System.Drawing.Size(627, 786);
             this.panel_QRCodeValue.TabIndex = 6;
             // 
             // txt_QRValue
             // 
+            this.txt_QRValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_QRValue.Appearance.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_QRValue.Appearance.Options.UseFont = true;
             this.txt_QRValue.Appearance.Options.UseTextOptions = true;
             this.txt_QRValue.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txt_QRValue.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.txt_QRValue.Location = new System.Drawing.Point(145, 252);
+            this.txt_QRValue.Location = new System.Drawing.Point(191, 375);
             this.txt_QRValue.Name = "txt_QRValue";
             this.txt_QRValue.Size = new System.Drawing.Size(155, 37);
             this.txt_QRValue.TabIndex = 0;
@@ -163,7 +165,7 @@
             this.cbe_ChooseAttendance.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.cbe_ChooseAttendance.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbe_ChooseAttendance.Size = new System.Drawing.Size(444, 34);
+            this.cbe_ChooseAttendance.Size = new System.Drawing.Size(627, 34);
             this.cbe_ChooseAttendance.StyleController = this.lci_RightPanel;
             this.cbe_ChooseAttendance.TabIndex = 5;
             this.cbe_ChooseAttendance.SelectedIndexChanged += new System.EventHandler(this.cbe_ChooseAttendance_SelectedIndexChanged);
@@ -177,7 +179,7 @@
             this.lci_QRCodeValue});
             this.lcg.Name = "lcg";
             this.lcg.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.lcg.Size = new System.Drawing.Size(450, 586);
+            this.lcg.Size = new System.Drawing.Size(633, 832);
             this.lcg.TextVisible = false;
             // 
             // lci_AttendanceList
@@ -185,7 +187,7 @@
             this.lci_AttendanceList.Control = this.cbe_ChooseAttendance;
             this.lci_AttendanceList.Location = new System.Drawing.Point(0, 0);
             this.lci_AttendanceList.Name = "lci_AttendanceList";
-            this.lci_AttendanceList.Size = new System.Drawing.Size(450, 40);
+            this.lci_AttendanceList.Size = new System.Drawing.Size(633, 40);
             this.lci_AttendanceList.TextSize = new System.Drawing.Size(0, 0);
             this.lci_AttendanceList.TextVisible = false;
             // 
@@ -194,16 +196,16 @@
             this.lci_QRCodeValue.Control = this.panel_QRCodeValue;
             this.lci_QRCodeValue.Location = new System.Drawing.Point(0, 40);
             this.lci_QRCodeValue.Name = "lci_QRCodeValue";
-            this.lci_QRCodeValue.Size = new System.Drawing.Size(450, 546);
+            this.lci_QRCodeValue.Size = new System.Drawing.Size(633, 792);
             this.lci_QRCodeValue.TextSize = new System.Drawing.Size(0, 0);
             this.lci_QRCodeValue.TextVisible = false;
             // 
             // panel_StopScan
             // 
             this.panel_StopScan.Controls.Add(this.btn_StopScan);
-            this.panel_StopScan.Location = new System.Drawing.Point(568, 710);
+            this.panel_StopScan.Location = new System.Drawing.Point(787, 966);
             this.panel_StopScan.Name = "panel_StopScan";
-            this.panel_StopScan.Size = new System.Drawing.Size(216, 42);
+            this.panel_StopScan.Size = new System.Drawing.Size(304, 42);
             this.panel_StopScan.TabIndex = 9;
             // 
             // btn_StopScan
@@ -216,7 +218,7 @@
             this.btn_StopScan.Location = new System.Drawing.Point(2, 2);
             this.btn_StopScan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_StopScan.Name = "btn_StopScan";
-            this.btn_StopScan.Size = new System.Drawing.Size(212, 38);
+            this.btn_StopScan.Size = new System.Drawing.Size(300, 38);
             this.btn_StopScan.StyleController = this.lci_RightPanel;
             this.btn_StopScan.TabIndex = 7;
             this.btn_StopScan.Text = "Stop Scan";
@@ -225,19 +227,19 @@
             // panel_Details
             // 
             this.panel_Details.Controls.Add(this.lci_RightPanel);
-            this.panel_Details.Location = new System.Drawing.Point(568, 114);
+            this.panel_Details.Location = new System.Drawing.Point(787, 124);
             this.panel_Details.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Details.Name = "panel_Details";
-            this.panel_Details.Size = new System.Drawing.Size(454, 590);
+            this.panel_Details.Size = new System.Drawing.Size(637, 836);
             this.panel_Details.TabIndex = 0;
             // 
             // panel_Camera
             // 
             this.panel_Camera.Controls.Add(this.pe_QRCamera);
-            this.panel_Camera.Location = new System.Drawing.Point(16, 114);
+            this.panel_Camera.Location = new System.Drawing.Point(16, 124);
             this.panel_Camera.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Camera.Name = "panel_Camera";
-            this.panel_Camera.Size = new System.Drawing.Size(546, 638);
+            this.panel_Camera.Size = new System.Drawing.Size(765, 884);
             this.panel_Camera.TabIndex = 8;
             // 
             // pe_QRCamera
@@ -246,7 +248,7 @@
             this.pe_QRCamera.Location = new System.Drawing.Point(2, 2);
             this.pe_QRCamera.Name = "pe_QRCamera";
             this.pe_QRCamera.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pe_QRCamera.Size = new System.Drawing.Size(542, 634);
+            this.pe_QRCamera.Size = new System.Drawing.Size(761, 880);
             this.pe_QRCamera.TabIndex = 2;
             // 
             // panel_PageHeading
@@ -255,7 +257,7 @@
             this.panel_PageHeading.Controls.Add(this.label_PageDescription);
             this.panel_PageHeading.Location = new System.Drawing.Point(16, 16);
             this.panel_PageHeading.Name = "panel_PageHeading";
-            this.panel_PageHeading.Size = new System.Drawing.Size(1006, 92);
+            this.panel_PageHeading.Size = new System.Drawing.Size(1408, 102);
             this.panel_PageHeading.TabIndex = 7;
             // 
             // label_PageTitle
@@ -265,7 +267,7 @@
             this.label_PageTitle.Appearance.Font = new System.Drawing.Font("Poppins", 17.71F, System.Drawing.FontStyle.Bold);
             this.label_PageTitle.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.label_PageTitle.Appearance.Options.UseFont = true;
-            this.label_PageTitle.Location = new System.Drawing.Point(31, 17);
+            this.label_PageTitle.Location = new System.Drawing.Point(31, 19);
             this.label_PageTitle.Margin = new System.Windows.Forms.Padding(4);
             this.label_PageTitle.Name = "label_PageTitle";
             this.label_PageTitle.Size = new System.Drawing.Size(142, 42);
@@ -278,12 +280,12 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_PageDescription.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
             this.label_PageDescription.Appearance.Options.UseFont = true;
-            this.label_PageDescription.Location = new System.Drawing.Point(31, 53);
+            this.label_PageDescription.Location = new System.Drawing.Point(31, 55);
             this.label_PageDescription.Margin = new System.Windows.Forms.Padding(4);
             this.label_PageDescription.Name = "label_PageDescription";
-            this.label_PageDescription.Size = new System.Drawing.Size(404, 28);
+            this.label_PageDescription.Size = new System.Drawing.Size(469, 28);
             this.label_PageDescription.TabIndex = 1;
-            this.label_PageDescription.Text = "Record attendance by scanning student QR codes.";
+            this.label_PageDescription.Text = "Record student attendance by scanning student QR codes.";
             // 
             // Root
             // 
@@ -296,7 +298,7 @@
             this.lci_StopScan,
             this.lci_StartScan});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1038, 768);
+            this.Root.Size = new System.Drawing.Size(1440, 1024);
             this.Root.TextVisible = false;
             // 
             // lci_PageHeading
@@ -306,7 +308,7 @@
             this.lci_PageHeading.CustomizationFormText = "layoutControlItem1";
             this.lci_PageHeading.Location = new System.Drawing.Point(0, 0);
             this.lci_PageHeading.Name = "lci_PageHeading";
-            this.lci_PageHeading.Size = new System.Drawing.Size(1012, 98);
+            this.lci_PageHeading.Size = new System.Drawing.Size(1414, 108);
             this.lci_PageHeading.Text = "layoutControlItem1";
             this.lci_PageHeading.TextSize = new System.Drawing.Size(0, 0);
             this.lci_PageHeading.TextVisible = false;
@@ -314,36 +316,36 @@
             // lci_Camera
             // 
             this.lci_Camera.Control = this.panel_Camera;
-            this.lci_Camera.Location = new System.Drawing.Point(0, 98);
+            this.lci_Camera.Location = new System.Drawing.Point(0, 108);
             this.lci_Camera.Name = "lci_Camera";
-            this.lci_Camera.Size = new System.Drawing.Size(552, 644);
+            this.lci_Camera.Size = new System.Drawing.Size(771, 890);
             this.lci_Camera.TextSize = new System.Drawing.Size(0, 0);
             this.lci_Camera.TextVisible = false;
             // 
             // lci_Details
             // 
             this.lci_Details.Control = this.panel_Details;
-            this.lci_Details.Location = new System.Drawing.Point(552, 98);
+            this.lci_Details.Location = new System.Drawing.Point(771, 108);
             this.lci_Details.Name = "lci_Details";
-            this.lci_Details.Size = new System.Drawing.Size(460, 596);
+            this.lci_Details.Size = new System.Drawing.Size(643, 842);
             this.lci_Details.TextSize = new System.Drawing.Size(0, 0);
             this.lci_Details.TextVisible = false;
             // 
             // lci_StopScan
             // 
             this.lci_StopScan.Control = this.panel_StopScan;
-            this.lci_StopScan.Location = new System.Drawing.Point(552, 694);
+            this.lci_StopScan.Location = new System.Drawing.Point(771, 950);
             this.lci_StopScan.Name = "lci_StopScan";
-            this.lci_StopScan.Size = new System.Drawing.Size(222, 48);
+            this.lci_StopScan.Size = new System.Drawing.Size(310, 48);
             this.lci_StopScan.TextSize = new System.Drawing.Size(0, 0);
             this.lci_StopScan.TextVisible = false;
             // 
             // lci_StartScan
             // 
             this.lci_StartScan.Control = this.panel_StartScan;
-            this.lci_StartScan.Location = new System.Drawing.Point(774, 694);
+            this.lci_StartScan.Location = new System.Drawing.Point(1081, 950);
             this.lci_StartScan.Name = "lci_StartScan";
-            this.lci_StartScan.Size = new System.Drawing.Size(238, 48);
+            this.lci_StartScan.Size = new System.Drawing.Size(333, 48);
             this.lci_StartScan.TextSize = new System.Drawing.Size(0, 0);
             this.lci_StartScan.TextVisible = false;
             // 
@@ -353,7 +355,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lc_QRScanner);
             this.Name = "QRScanner_UserControl";
-            this.Size = new System.Drawing.Size(1038, 768);
+            this.Size = new System.Drawing.Size(1440, 1024);
             this.Load += new System.EventHandler(this.QRScanner_UserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lc_QRScanner)).EndInit();
             this.lc_QRScanner.ResumeLayout(false);

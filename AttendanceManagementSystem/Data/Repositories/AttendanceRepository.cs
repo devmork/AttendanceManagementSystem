@@ -52,7 +52,7 @@ namespace AttendanceManagementSystem.Data.Repositories
                 connection.Open();
                 string sql = "DELETE FROM Attendance WHERE AttendanceId = @AttendanceId";
                 var parameters = new DynamicParameters();
-                parameters.Add("AttendanceId", attendanceId);  // 'attendanceId' matches the parameter name
+                parameters.Add("AttendanceId", attendanceId);
                 connection.Execute(sql, parameters);
             }
         }
@@ -91,91 +91,6 @@ namespace AttendanceManagementSystem.Data.Repositories
                 return connection.ExecuteScalar<int>(sql);
             }
         }
-
-        public void RecordAttendance(int attendanceId, string attendanceName, string logType, string schoolStudentId)
-        {
-            using (SQLiteConnection connection = new SQLiteConnection(_connectionStrng))
-            {
-                connection.Open();
-                var parameters = new DynamicParameters();
-
-                // Check if attendance id exist
-                string checkAttendanceSql = "SELECT COUNT(AttendanceId) FROM Attendance WHERE AttendanceId = @AttendanceId";
-                parameters.Add("AttendanceId", attendanceId);
-                if (connection.ExecuteScalar<int>(checkAttendanceSql, parameters) == 0)
-                {
-                    throw new Exception("Invalid AttendanceId.");
-                }
-
-                // Check if student id exist
-                string checkStudentIdSql = "SELECT COUNT(SchoolStudentId) FROM Student WHERE SchoolStudentId = @SchoolStudentId";
-                parameters.Add("SchoolStudentId", schoolStudentId);
-                if (connection.ExecuteScalar<int>(checkStudentIdSql, parameters) == 0)
-                {
-                    throw new Exception("Invalid school student id.");
-                }
-
-                // Check for duplicate attendance record
-                string checkDuplicateSql = "SELECT COUNT(*) FROM AttendanceRecords WHERE AttendanceId = @AttendanceId AND SchoolStudentId = @SchoolStudentId AND DATE(Timestamp) = DATE('now')";
-                if (connection.ExecuteScalar<int>(checkDuplicateSql, parameters) > 0)
-                {
-                    throw new Exception("Attendance already recorded for this student today.");
-                }
-
-                string sql =
-                      @"INSERT INTO AttendanceRecords (AttendanceId, AttendanceName, LogType, SchoolStudentId, Timestamp, Remarks) 
-                      VALUES (@AttendanceId, @AttendanceName, @LogType, @SchoolStudentId, @Timestamp, @Remarks)";
-
-                parameters.Add("AttendanceId", attendanceId);
-                parameters.Add("AttendanceName", attendanceName);
-                parameters.Add("LogType", logType);
-                parameters.Add("SchoolStudentId", schoolStudentId);
-                parameters.Add("Timestamp", DateTime.Now.ToString("yyyy-MM-dd HH:mm"));
-                parameters.Add("Remarks", "Present");
-                connection.Execute(sql, parameters);
-            }
-        }
-        public List<AttendanceRecords> GetAttendanceRecordsByStudentId(string schoolStudentId)
-        {
-            using (SQLiteConnection connection = new SQLiteConnection(_connectionStrng))
-            {
-                connection.Open();
-                string sql =
-                    @"SELECT ar.RecordId, ar.AttendanceId, ar.SchoolStudentId AS StudentId, ar.TimeStamp AS Timestamp, ar.Remarks, 
-                    a.AttendanceName, a.LogType, a.Date, a.StartTime, a.EndTime 
-                    FROM AttendanceRecords ar
-                    JOIN Attendance a ON ar.AttendanceId = a.AttendanceId
-                    WHERE ar.SchoolStudentId = @StudentId";
-
-                var parameters = new DynamicParameters();
-                parameters.Add("StudentId", schoolStudentId);
-                return connection.Query<AttendanceRecords>(sql, parameters).ToList();
-            }
-        }
-        public int GetTotalAbsentCount(string studentId)
-        {
-            using (SQLiteConnection connection = new SQLiteConnection(_connectionStrng))
-            {
-                connection.Open();
-                // Get all AttendanceIds from the Attendance table
-                string attendanceSql = @"SELECT AttendanceId FROM Attendance";
-                var allAttendanceIds = connection.Query<int>(attendanceSql).ToList();
-
-                // Get AttendanceIds where the student was present
-                string presentSql =
-                    @"SELECT AttendanceId FROM AttendanceRecords 
-                    WHERE SchoolStudentId = @StudentId AND Remarks = 'Present'";
-                var parameters = new DynamicParameters();
-                parameters.Add("StudentId", studentId);
-                var presentAttendanceIds = connection.Query<int>(presentSql, parameters).ToList();
-
-                // Count absences (AttendanceIds with no present record)
-                int totalAbsent = allAttendanceIds.Except(presentAttendanceIds).Count();
-                return totalAbsent;
-            }
-        }
-
-
     }
 }
 

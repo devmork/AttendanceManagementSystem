@@ -27,9 +27,12 @@ namespace AttendanceManagementSystem.Forms.Students
         {
             if (string.IsNullOrWhiteSpace(txt_FirstName.Text) ||
                 string.IsNullOrWhiteSpace(txt_LastName.Text) ||
-                string.IsNullOrWhiteSpace(txt_SchoolStudentId.Text))
+                string.IsNullOrWhiteSpace(txt_SchoolStudentId.Text) ||
+                string.IsNullOrWhiteSpace(se_YearLevel.Value.ToString()) ||
+                string.IsNullOrWhiteSpace(cbe_Course.Text) ||
+                string.IsNullOrWhiteSpace(txt_EmailAddress.Text))
             {
-                XtraMessageBox.Show("Please fill in all required fields (First Name, Last Name, School ID).");
+                XtraMessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             try
@@ -56,14 +59,14 @@ namespace AttendanceManagementSystem.Forms.Students
         }
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (student == null)
+            if (student.QRCode == null)
             {
                 XtraMessageBox.Show("Please generate a QR code before saving.");
                 return;
             }
             try
             {
-                _studentsRepository.AddStudent(student);            
+                _studentsRepository.AddStudent(student);
                 XtraMessageBox.Show("Student saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearFields();
                 this.DialogResult = DialogResult.OK;
@@ -91,6 +94,6 @@ namespace AttendanceManagementSystem.Forms.Students
             cbe_Course.SelectedIndex = -1;
             txt_EmailAddress.Text = string.Empty;
             pe_QRCode.Image = null;
-        }  
+        }
     }
 }

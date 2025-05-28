@@ -21,12 +21,6 @@ namespace AttendanceManagementSystem.Forms.Auth
             InitializeComponent();
             _userRepository = new UserRepository(); 
         }
-        private void label_SignUp_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SignUp_Form signUpForm = new SignUp_Form();
-            signUpForm.ShowDialog();
-        }
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
             string email = txt_Email.Text;
@@ -45,7 +39,7 @@ namespace AttendanceManagementSystem.Forms.Auth
                     XtraMessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     var mainForm = new MainForm();
                     mainForm.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else
                 {
@@ -58,11 +52,20 @@ namespace AttendanceManagementSystem.Forms.Auth
                 XtraMessageBox.Show($"Error during login: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        private void label_SignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUp_Form signUpForm = new SignUp_Form();
+            signUpForm.ShowDialog();
+        }
         private void ClearFilds()
         {
             txt_Email.Text = string.Empty;
             txt_Password.Text = string.Empty;
+        }
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

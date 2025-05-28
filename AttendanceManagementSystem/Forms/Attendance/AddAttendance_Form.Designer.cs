@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAttendance_Form));
             this.lc_AddEventForm = new DevExpress.XtraLayout.LayoutControl();
             this.gc_EventDetails = new DevExpress.XtraEditors.GroupControl();
             this.label_AttendanceLocation = new DevExpress.XtraEditors.LabelControl();
@@ -47,6 +48,7 @@
             this.label_Instruction = new DevExpress.XtraEditors.LabelControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lci_EventDetails = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btn_CloseForm = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.lc_AddEventForm)).BeginInit();
             this.lc_AddEventForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gc_EventDetails)).BeginInit();
@@ -60,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_AttendanceName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lci_EventDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CloseForm.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // lc_AddEventForm
@@ -78,6 +81,7 @@
             this.gc_EventDetails.AppearanceCaption.Font = new System.Drawing.Font("Poppins", 12.8F, System.Drawing.FontStyle.Bold);
             this.gc_EventDetails.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.gc_EventDetails.AppearanceCaption.Options.UseFont = true;
+            this.gc_EventDetails.Controls.Add(this.btn_CloseForm);
             this.gc_EventDetails.Controls.Add(this.label_AttendanceLocation);
             this.gc_EventDetails.Controls.Add(this.txt_AttendanceLocation);
             this.gc_EventDetails.Controls.Add(this.cbe_LogType);
@@ -277,6 +281,22 @@
             this.lci_EventDetails.TextSize = new System.Drawing.Size(0, 0);
             this.lci_EventDetails.TextVisible = false;
             // 
+            // btn_CloseForm
+            // 
+            this.btn_CloseForm.EditValue = ((object)(resources.GetObject("btn_CloseForm.EditValue")));
+            this.btn_CloseForm.Location = new System.Drawing.Point(500, 4);
+            this.btn_CloseForm.Name = "btn_CloseForm";
+            this.btn_CloseForm.Properties.AllowZoom = DevExpress.Utils.DefaultBoolean.True;
+            this.btn_CloseForm.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CloseForm.Properties.Appearance.Options.UseBackColor = true;
+            this.btn_CloseForm.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btn_CloseForm.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.btn_CloseForm.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.btn_CloseForm.Properties.SvgImageSize = new System.Drawing.Size(14, 14);
+            this.btn_CloseForm.Size = new System.Drawing.Size(26, 28);
+            this.btn_CloseForm.TabIndex = 21;
+            this.btn_CloseForm.Click += new System.EventHandler(this.btn_CloseForm_Click);
+            // 
             // AddAttendance_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
@@ -300,6 +320,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_AttendanceName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lci_EventDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CloseForm.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,5 +346,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl label_AttendanceLocation;
         private DevExpress.XtraEditors.TextEdit txt_AttendanceLocation;
+        private DevExpress.XtraEditors.PictureEdit btn_CloseForm;
     }
 }

@@ -50,8 +50,10 @@
     <Reference Include="DevExpress.Images.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Map.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.PivotGrid.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.TreeMap.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v23.2" />
     <Reference Include="DevExpress.Sparkline.v23.2.Core" />
@@ -73,6 +75,7 @@
     <Reference Include="DevExpress.XtraPivotGrid.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Extensions, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -161,6 +164,8 @@
     <Reference Include="System.Formats.Asn1, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Formats.Asn1.9.0.5\lib\net462\System.Formats.Asn1.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
     </Reference>
@@ -207,6 +212,8 @@
   <ItemGroup>
     <Compile Include="Data\Repositories\AttendanceRepository.cs" />
     <Compile Include="Data\Repositories\UserRepository.cs" />
+    <Compile Include="DTO\AttendanceRecordsDTO.cs" />
+    <Compile Include="DTO\StudentsAttendanceDTO.cs" />
     <Compile Include="Forms\Attendance Record\AttendanceRecords_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,10 +232,29 @@
     <Compile Include="Forms\Auth\SignUp_Form.Designer.cs">
       <DependentUpon>SignUp_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reports\AllAttendanceRecord_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\AllAttendanceRecord_Form.Designer.cs">
+      <DependentUpon>AllAttendanceRecord_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StudentsAttendance_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StudentsAttendance_Report.Designer.cs">
+      <DependentUpon>StudentsAttendance_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\AllQRCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\AllQRCodes.Designer.cs">
+      <DependentUpon>AllQRCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Services\IAttendanceService.cs" />
     <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
     <Compile Include="Interfaces\Utilities\IQRScannerHelper.cs" />
-    <Compile Include="Models\Base\AttendanceRecords.cs" />
-    <Compile Include="Models\Derived\User.cs" />
+    <Compile Include="Models\Base\User.cs" />
+    <Compile Include="Services\AttendanceService.cs" />
     <Compile Include="Services\QRCodeService.cs" />
     <Compile Include="Data\Repositories\StudentsRepository.cs" />
     <Compile Include="Forms\Attendance Record\StudentAttendanceRecord_Form.cs">
@@ -295,8 +321,7 @@
     <Compile Include="Interfaces\Services\IQRCodeService.cs" />
     <Compile Include="Interfaces\Repositories\IStudentsRepository.cs" />
     <Compile Include="Models\Base\Attendance.cs" />
-    <Compile Include="Models\Base\Person.cs" />
-    <Compile Include="Models\Derived\Student.cs" />
+    <Compile Include="Models\Base\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\QRScannerHelper.cs" />
@@ -330,6 +355,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QRScanner\QRScanner_UserControl.resx">
       <DependentUpon>QRScanner_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\AllAttendanceRecord_Form.resx">
+      <DependentUpon>AllAttendanceRecord_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StudentsAttendance_Report.resx">
+      <DependentUpon>StudentsAttendance_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\AllQRCodes.resx">
+      <DependentUpon>AllQRCodes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Students\AddStudent_Form.resx">
       <DependentUpon>AddStudent_Form.cs</DependentUpon>
@@ -371,7 +405,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Models\Derived\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

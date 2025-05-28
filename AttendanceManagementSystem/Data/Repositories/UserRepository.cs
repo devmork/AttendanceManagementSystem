@@ -13,7 +13,6 @@ namespace AttendanceManagementSystem.Data.Repositories
     public class UserRepository : IUserRepository
     {
         private string _connectionStrng = "Data Source=SEAMS.db;Version=3;Mode=ReadWrite;";
-
         public void AddUser(User user)
         {
             using (var connection = new SQLiteConnection(_connectionStrng))
@@ -34,7 +33,7 @@ namespace AttendanceManagementSystem.Data.Repositories
             using (var connection = new SQLiteConnection(_connectionStrng))
             {
                 connection.Open();
-                string sql = "SELECT * FROM Users WHERE Email = @Email;";
+                string sql = "SELECT Email FROM Users WHERE Email = @Email;";
                 return connection.QueryFirstOrDefault<User>(sql, new { Email = email });
             }
         }

@@ -22,9 +22,7 @@ namespace AttendanceManagementSystem.Forms.Auth
 		{
             InitializeComponent();
             _userRepository = new UserRepository(); 
-
         }
-
         private void btn_CreateAccount_Click(object sender, EventArgs e)
         {
             string userName = txt_UserName.Text;
@@ -36,7 +34,6 @@ namespace AttendanceManagementSystem.Forms.Auth
                 XtraMessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             try
             {
                 var existingUser = _userRepository.GetUserByEmail(email);
@@ -50,7 +47,7 @@ namespace AttendanceManagementSystem.Forms.Auth
                 {
                     UserName = userName,
                     Email = email,
-                    Password = password // In production, hash the password
+                    Password = password
                 };
 
                 _userRepository.AddUser(newUser);
@@ -62,17 +59,21 @@ namespace AttendanceManagementSystem.Forms.Auth
                 XtraMessageBox.Show($"Error during sign up: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void label_LogInNow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LogIn_Form logInForm = new LogIn_Form();
+            logInForm.Show();
+        }
         private void ClearFilds()
         {
             txt_UserName.Text = string.Empty;
             txt_Email.Text = string.Empty;
             txt_Password.Text = string.Empty;
         }
-        private void label_LogInNow_Click(object sender, EventArgs e)
+        private void btn_Close_Click(object sender, EventArgs e)
         {
-            this.Hide(); // Hide the current form
-            LogIn_Form logInForm = new LogIn_Form();
-            logInForm.Show();
+            this.Close();
         }
     }
 }

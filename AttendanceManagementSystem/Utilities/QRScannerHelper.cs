@@ -13,6 +13,11 @@ namespace AttendanceManagementSystem.Utilities
     {
         public string DecodeQRCode(Bitmap bitmap)
         {
+            if (bitmap == null)
+            {
+                return null; // Return null if bitmap is invalid
+            }
+
             try
             {
                 BarcodeReader reader = new BarcodeReader();
@@ -21,7 +26,7 @@ namespace AttendanceManagementSystem.Utilities
             }
             catch
             {
-                return null; // Return null if decoding fails
+                return null;
             }
         }
     }

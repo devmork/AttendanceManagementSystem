@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions13 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Attendance_UserControl));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject49 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject50 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject51 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject52 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions14 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject53 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject54 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject55 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject56 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.lc_Attendance = new DevExpress.XtraLayout.LayoutControl();
             this.panel_PageHeading = new DevExpress.XtraEditors.PanelControl();
             this.btn_AddAttendance = new DevExpress.XtraEditors.SimpleButton();
@@ -81,7 +81,7 @@
             this.lc_Attendance.Location = new System.Drawing.Point(0, 0);
             this.lc_Attendance.Name = "lc_Attendance";
             this.lc_Attendance.Root = this.Root;
-            this.lc_Attendance.Size = new System.Drawing.Size(1038, 768);
+            this.lc_Attendance.Size = new System.Drawing.Size(1440, 1024);
             this.lc_Attendance.TabIndex = 0;
             this.lc_Attendance.Text = "layoutControl1";
             // 
@@ -92,7 +92,7 @@
             this.panel_PageHeading.Controls.Add(this.label_PageDescription);
             this.panel_PageHeading.Location = new System.Drawing.Point(16, 16);
             this.panel_PageHeading.Name = "panel_PageHeading";
-            this.panel_PageHeading.Size = new System.Drawing.Size(1006, 100);
+            this.panel_PageHeading.Size = new System.Drawing.Size(1408, 102);
             this.panel_PageHeading.TabIndex = 7;
             // 
             // btn_AddAttendance
@@ -110,11 +110,11 @@
             this.btn_AddAttendance.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.btn_AddAttendance.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_AddAttendance.ImageOptions.SvgImage")));
             this.btn_AddAttendance.ImageOptions.SvgImageSize = new System.Drawing.Size(26, 26);
-            this.btn_AddAttendance.Location = new System.Drawing.Point(754, 24);
+            this.btn_AddAttendance.Location = new System.Drawing.Point(1156, 26);
             this.btn_AddAttendance.Margin = new System.Windows.Forms.Padding(0);
             this.btn_AddAttendance.Name = "btn_AddAttendance";
             this.btn_AddAttendance.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_AddAttendance.Size = new System.Drawing.Size(235, 52);
+            this.btn_AddAttendance.Size = new System.Drawing.Size(236, 56);
             this.btn_AddAttendance.TabIndex = 3;
             this.btn_AddAttendance.Text = "Add Attendance";
             this.btn_AddAttendance.Click += new System.EventHandler(this.btn_AddAttendance_Click);
@@ -126,7 +126,7 @@
             this.label_PageTitle.Appearance.Font = new System.Drawing.Font("Poppins", 17.71F, System.Drawing.FontStyle.Bold);
             this.label_PageTitle.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.label_PageTitle.Appearance.Options.UseFont = true;
-            this.label_PageTitle.Location = new System.Drawing.Point(31, 17);
+            this.label_PageTitle.Location = new System.Drawing.Point(31, 22);
             this.label_PageTitle.Margin = new System.Windows.Forms.Padding(4);
             this.label_PageTitle.Name = "label_PageTitle";
             this.label_PageTitle.Size = new System.Drawing.Size(147, 42);
@@ -139,7 +139,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_PageDescription.Appearance.Font = new System.Drawing.Font("Poppins", 12F);
             this.label_PageDescription.Appearance.Options.UseFont = true;
-            this.label_PageDescription.Location = new System.Drawing.Point(31, 53);
+            this.label_PageDescription.Location = new System.Drawing.Point(31, 58);
             this.label_PageDescription.Margin = new System.Windows.Forms.Padding(4);
             this.label_PageDescription.Name = "label_PageDescription";
             this.label_PageDescription.Size = new System.Drawing.Size(305, 28);
@@ -148,13 +148,13 @@
             // 
             // gc_Attendance
             // 
-            this.gc_Attendance.Location = new System.Drawing.Point(16, 122);
+            this.gc_Attendance.Location = new System.Drawing.Point(16, 124);
             this.gc_Attendance.MainView = this.gv_Attendance;
             this.gc_Attendance.Name = "gc_Attendance";
             this.gc_Attendance.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItem_ActionButton,
             this.repositoryItemTextEdit_Status});
-            this.gc_Attendance.Size = new System.Drawing.Size(1006, 630);
+            this.gc_Attendance.Size = new System.Drawing.Size(1408, 884);
             this.gc_Attendance.TabIndex = 8;
             this.gc_Attendance.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Attendance});
@@ -182,6 +182,7 @@
             this.gv_Attendance.OptionsCustomization.AllowGroup = false;
             this.gv_Attendance.OptionsCustomization.AllowSort = false;
             this.gv_Attendance.OptionsMenu.EnableColumnMenu = false;
+            this.gv_Attendance.OptionsView.ShowGroupPanel = false;
             this.gv_Attendance.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never;
             this.gv_Attendance.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.gv_Attendance_CustomColumnDisplayText);
             // 
@@ -303,17 +304,17 @@
             // 
             this.repositoryItem_ActionButton.Appearance.Options.UseTextOptions = true;
             this.repositoryItem_ActionButton.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            editorButtonImageOptions13.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions13.SvgImage")));
-            editorButtonImageOptions13.SvgImageSize = new System.Drawing.Size(16, 16);
-            serializableAppearanceObject49.Options.UseTextOptions = true;
-            serializableAppearanceObject49.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            editorButtonImageOptions14.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions14.SvgImage")));
-            editorButtonImageOptions14.SvgImageSize = new System.Drawing.Size(16, 16);
-            serializableAppearanceObject53.Options.UseTextOptions = true;
-            serializableAppearanceObject53.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
+            editorButtonImageOptions1.SvgImageSize = new System.Drawing.Size(16, 16);
+            serializableAppearanceObject1.Options.UseTextOptions = true;
+            serializableAppearanceObject1.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
+            editorButtonImageOptions2.SvgImageSize = new System.Drawing.Size(16, 16);
+            serializableAppearanceObject5.Options.UseTextOptions = true;
+            serializableAppearanceObject5.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.repositoryItem_ActionButton.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions13, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject49, serializableAppearanceObject50, serializableAppearanceObject51, serializableAppearanceObject52, "", "Edit", null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions14, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject53, serializableAppearanceObject54, serializableAppearanceObject55, serializableAppearanceObject56, "", "Delete", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "Edit", null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "Delete", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItem_ActionButton.Name = "repositoryItem_ActionButton";
             this.repositoryItem_ActionButton.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItem_ActionButton.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItem_ActionButton_ButtonClick);
@@ -326,7 +327,7 @@
             this.lci_PageHeading,
             this.lci_PanelBody});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1038, 768);
+            this.Root.Size = new System.Drawing.Size(1440, 1024);
             this.Root.TextVisible = false;
             // 
             // lci_PageHeading
@@ -336,7 +337,7 @@
             this.lci_PageHeading.CustomizationFormText = "layoutControlItem1";
             this.lci_PageHeading.Location = new System.Drawing.Point(0, 0);
             this.lci_PageHeading.Name = "lci_PageHeading";
-            this.lci_PageHeading.Size = new System.Drawing.Size(1012, 106);
+            this.lci_PageHeading.Size = new System.Drawing.Size(1414, 108);
             this.lci_PageHeading.Text = "layoutControlItem1";
             this.lci_PageHeading.TextSize = new System.Drawing.Size(0, 0);
             this.lci_PageHeading.TextVisible = false;
@@ -346,9 +347,9 @@
             this.lci_PanelBody.Control = this.gc_Attendance;
             this.lci_PanelBody.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lci_PanelBody.CustomizationFormText = "layoutControlItem2";
-            this.lci_PanelBody.Location = new System.Drawing.Point(0, 106);
+            this.lci_PanelBody.Location = new System.Drawing.Point(0, 108);
             this.lci_PanelBody.Name = "lci_PanelBody";
-            this.lci_PanelBody.Size = new System.Drawing.Size(1012, 636);
+            this.lci_PanelBody.Size = new System.Drawing.Size(1414, 890);
             this.lci_PanelBody.Text = "layoutControlItem2";
             this.lci_PanelBody.TextSize = new System.Drawing.Size(0, 0);
             this.lci_PanelBody.TextVisible = false;
@@ -359,7 +360,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lc_Attendance);
             this.Name = "Attendance_UserControl";
-            this.Size = new System.Drawing.Size(1038, 768);
+            this.Size = new System.Drawing.Size(1440, 1024);
             ((System.ComponentModel.ISupportInitialize)(this.lc_Attendance)).EndInit();
             this.lc_Attendance.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panel_PageHeading)).EndInit();

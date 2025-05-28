@@ -19,16 +19,13 @@ namespace AttendanceManagementSystem.Forms.Students
         private readonly IStudentsRepository _studentRepository;
         private readonly IQRCodeService _qrCodeService;
         private Student _student;
-        public EditStudent_Form(Student student = null)
+        public EditStudent_Form(Student student)
 		{
             InitializeComponent();
             _studentRepository = new StudentsRepository();
             _qrCodeService = new QRCodeService();
             _student = student;
-            if (student != null)
-            {
-                LoadStudentData();
-            }
+            LoadStudentData();
         }
         private void LoadStudentData()
         {
@@ -54,7 +51,6 @@ namespace AttendanceManagementSystem.Forms.Students
             pe_QRCode.Image = _qrCodeService.GetQRCodeImage();
             _student.QRCode = _qrCodeService.GetQRCodeByteArray();
             _student.SchoolStudentId = txt_SchoolStudentId.Text;
-
         }
         private void btn_SaveChanges_Click(object sender, EventArgs e)
         {
@@ -63,14 +59,17 @@ namespace AttendanceManagementSystem.Forms.Students
             {
                 if (string.IsNullOrWhiteSpace(txt_FirstName.Text) ||
                     string.IsNullOrWhiteSpace(txt_LastName.Text) ||
-                    string.IsNullOrWhiteSpace(txt_SchoolStudentId.Text))
+                    string.IsNullOrWhiteSpace(txt_SchoolStudentId.Text) ||
+                    string.IsNullOrWhiteSpace(se_YearLevel.Value.ToString()) ||
+                    string.IsNullOrWhiteSpace(cbe_Course.Text) ||
+                    string.IsNullOrWhiteSpace(txt_EmailAddress.Text))
                 {
-                    XtraMessageBox.Show("Please fill in all required fields (First Name, Last Name, School ID).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    XtraMessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 if (txt_SchoolStudentId.Text != existingStudentId)
                 {
-                    XtraMessageBox.Show("You need to generate a new QR code before saving. Changes to Student ID detected.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    XtraMessageBox.Show("You need to generate a new QR code before saving. Changes in Student ID detected.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 

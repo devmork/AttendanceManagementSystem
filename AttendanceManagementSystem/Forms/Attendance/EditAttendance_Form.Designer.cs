@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditAttendance_Form));
             this.lc_EditEvent = new DevExpress.XtraLayout.LayoutControl();
             this.gc_EventDetails = new DevExpress.XtraEditors.GroupControl();
+            this.btn_CloseForm = new DevExpress.XtraEditors.PictureEdit();
             this.label_Instruction = new DevExpress.XtraEditors.LabelControl();
             this.cbe_LogType = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btn_SaveChanges = new DevExpress.XtraEditors.SimpleButton();
@@ -51,6 +53,7 @@
             this.lc_EditEvent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gc_EventDetails)).BeginInit();
             this.gc_EventDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CloseForm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbe_LogType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.te_EndTime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.te_StartTime.Properties)).BeginInit();
@@ -77,6 +80,7 @@
             // 
             this.gc_EventDetails.AppearanceCaption.Font = new System.Drawing.Font("Poppins", 12.8F, System.Drawing.FontStyle.Bold);
             this.gc_EventDetails.AppearanceCaption.Options.UseFont = true;
+            this.gc_EventDetails.Controls.Add(this.btn_CloseForm);
             this.gc_EventDetails.Controls.Add(this.label_Instruction);
             this.gc_EventDetails.Controls.Add(this.cbe_LogType);
             this.gc_EventDetails.Controls.Add(this.btn_SaveChanges);
@@ -97,6 +101,22 @@
             this.gc_EventDetails.Size = new System.Drawing.Size(526, 418);
             this.gc_EventDetails.TabIndex = 4;
             this.gc_EventDetails.Text = "Edit Attendance";
+            // 
+            // btn_CloseForm
+            // 
+            this.btn_CloseForm.EditValue = ((object)(resources.GetObject("btn_CloseForm.EditValue")));
+            this.btn_CloseForm.Location = new System.Drawing.Point(496, 4);
+            this.btn_CloseForm.Name = "btn_CloseForm";
+            this.btn_CloseForm.Properties.AllowZoom = DevExpress.Utils.DefaultBoolean.True;
+            this.btn_CloseForm.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CloseForm.Properties.Appearance.Options.UseBackColor = true;
+            this.btn_CloseForm.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btn_CloseForm.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.btn_CloseForm.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.btn_CloseForm.Properties.SvgImageSize = new System.Drawing.Size(14, 14);
+            this.btn_CloseForm.Size = new System.Drawing.Size(26, 28);
+            this.btn_CloseForm.TabIndex = 23;
+            this.btn_CloseForm.Click += new System.EventHandler(this.btn_CloseForm_Click);
             // 
             // label_Instruction
             // 
@@ -290,6 +310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gc_EventDetails)).EndInit();
             this.gc_EventDetails.ResumeLayout(false);
             this.gc_EventDetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CloseForm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbe_LogType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.te_EndTime.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.te_StartTime.Properties)).EndInit();
@@ -324,5 +345,6 @@
         private DevExpress.XtraEditors.TextEdit txt_AttendanceName;
         private DevExpress.XtraEditors.ComboBoxEdit cbe_LogType;
         private DevExpress.XtraEditors.LabelControl label_Instruction;
+        private DevExpress.XtraEditors.PictureEdit btn_CloseForm;
     }
 }

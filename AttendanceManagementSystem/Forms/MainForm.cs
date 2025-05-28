@@ -18,15 +18,26 @@ using AttendanceManagementSystem.Forms.Auth;
 using DevExpress.XtraBars.Navigation;
 using AttendanceManagementSystem.Interfaces.Repositories;
 using AttendanceManagementSystem.Data.Repositories;
+using AttendanceManagementSystem.Forms.Reports;
+using AttendanceManagementSystem.DTO;
+using AttendanceManagementSystem.Interfaces.Services;
+using AttendanceManagementSystem.Services;
+using DevExpress.XtraReports.UI;
 
 namespace AttendanceManagementSystem.Forms
 {
 	public partial class MainForm: DevExpress.XtraEditors.XtraForm
 	{
+        private readonly IStudentsRepository _studentsRepository;
+        private readonly IAttendanceService _attendanceService;
+
         public MainForm()
 		{
             InitializeComponent();
-		}
+            _studentsRepository = new StudentsRepository();
+            _attendanceService = new AttendanceService();
+
+        }
         private void MainForm_Load(object sender, EventArgs e)
         {
             Dashboard_UserControl dashboard_UserControl = new Dashboard_UserControl();
@@ -76,6 +87,44 @@ namespace AttendanceManagementSystem.Forms
             this.Hide();
             LogIn_Form logIn_Form = new LogIn_Form();
             logIn_Form.ShowDialog();
+        }
+        private void btn_AllAttendanceReport_Click(object sender, EventArgs e)
+        {
+            AllAttendanceRecord_Form allAttendanceRecord_Form = new AllAttendanceRecord_Form();
+            allAttendanceRecord_Form.ShowDialog();
+        }
+        private void btn_AllQRCodes_Click(object sender, EventArgs e)
+        {
+            AllQRCodes allQRCodes = new AllQRCodes();
+            allQRCodes.ShowDialog();
+        }
+
+        private void btn_StudentsAttendance_Click(object sender, EventArgs e)
+        {
+            StudentsAttendance_Report studentsAttendance_Report = new StudentsAttendance_Report();
+            studentsAttendance_Report.DataSource = GetStudentsAttendanceSummary();
+            studentsAttendance_Report.ShowPreviewDialog();
+        }
+
+        public List<StudentsAttendanceDTO> GetStudentsAttendanceSummary()
+        {
+            var students = _studentsRepository.GetAllStudent();
+            var result = new List<StudentsAttendanceDTO>();
+
+            foreach (var student in students)
+            {
+                var attendanceSummary = new StudentsAttendanceDTO
+                {
+                    SchoolStudentId = student.SchoolStudentId,
+                    Name = student.FullName,
+                    Course = student.Course,
+                    YearLevel = student.YearLevel,
+                    TotalAbsent = _attendanceService.GetTotalAbsent(student.SchoolStudentId),
+                };
+
+                result.Add(attendanceSummary);
+            }
+            return result;
         }
     }
 }

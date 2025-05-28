@@ -16,6 +16,9 @@ using AttendanceManagementSystem.Data.Repositories;
 using ZXing.QrCode.Internal;
 using System.IO;
 using DevExpress.XtraGrid.Views.Grid;
+using System.IO.Compression;
+using ZXing.QrCode;
+using ZXing;
 
 namespace AttendanceManagementSystem.Forms.Students
 {
@@ -26,7 +29,7 @@ namespace AttendanceManagementSystem.Forms.Students
         {
             InitializeComponent();
             _studentsRepository = new StudentsRepository();
-            LoadData();
+            LoadStudents();
         }
         private void btn_AddStudent_Click(object sender, EventArgs e)
         {
@@ -34,31 +37,21 @@ namespace AttendanceManagementSystem.Forms.Students
             {
                 if (addStudentForm.ShowDialog() == DialogResult.OK)
                 {
-                    LoadData();
+                    LoadStudents();
                 }
             }
         }
         private void repositoryItem_ActionButton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Student selectedRow = gv_Students.GetFocusedRow() as Student;
+            Student selectedRow = gv_Students.GetFocusedRow() as Student;
 
-                if (selectedRow != null)
-                {
-                    EditStudent_Form editStudentForm = new EditStudent_Form(selectedRow);
-                    if (editStudentForm.ShowDialog() == DialogResult.OK)
-                    {
-                        LoadData();
-                    }
-                }
-            }
-            catch (Exception ex)
+            EditStudent_Form editStudentForm = new EditStudent_Form(selectedRow);
+            if (editStudentForm.ShowDialog() == DialogResult.OK)
             {
-                XtraMessageBox.Show($"Error editing student: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoadStudents();
             }
         }
-        public void LoadData()
+        public void LoadStudents()
         {
             gc_Students.DataSource = _studentsRepository.GetAllStudent();
         }
